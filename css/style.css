@@ -1,0 +1,225 @@
+/*===== Reset ===== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*===== Maquetado Global ===== */
+
+
+/*===== portfolio.html ===== */
+
+#contenedor-grid{
+    height: 100vh; /*100% viewport heigh */
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.datos-personales {
+    grid-area: datos-personales;
+}
+
+.datos-personales label {
+    text-align: left;
+}
+
+.datos-personales span{
+    text-align: right;
+}
+
+.formacion-academica {
+    grid-area: formacion-academica;
+}
+
+.experiencia-laboral{
+    grid-area: experiencia-laboral;
+}
+
+.proyectos {
+    grid-area: proyectos;
+}
+
+.imagen-foto img{
+    border-radius: 50%;
+    width: 10rem;
+}
+
+.section-container {
+    background: linear-gradient(#2b964b, #51c58b);
+    color: white;
+    font-size: 0.9rem;
+}
+
+.titulo img {
+    width: 1.5rem;
+}
+
+.icono-editar img{
+    width: 1.5rem;
+}
+
+/*===== editardatosPersonales.html ===== */
+
+.datos-personales-editar form {
+    height: 100%;
+}
+
+.datos-personales-editar label {
+    width: 10rem;
+}
+
+.datos-personales-editar input {
+    width: 10rem;
+    margin-left: 1rem;
+}
+
+/*===== nuevaFormacion.html ===== */
+
+.nueva-formacion label {
+    width: 7rem;
+}
+
+.nueva-formacion input {
+    width: 9rem;
+    margin-left: 1rem;
+}
+
+/*===== infoFormacion.html ===== */
+
+.info-formacion label {
+    width: 8rem;
+}
+
+.info-formacion input {
+    width: 9rem;
+}
+
+/*===== Botones ===== */
+
+.aAceptar {
+    width: auto;
+    background: linear-gradient(#2b964b, #51c58b);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+
+  .aAceptar:hover {
+    background: rgb(70, 95, 163);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(70, 95, 163),
+                0 0 25px rgb(70, 95, 163),
+                0 0 50px rgb(70, 95, 163),
+                0 0 100px rgb(70, 95, 163);
+    }
+
+.aCancelar {
+        background: linear-gradient(#2b964b, #51c58b);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
+        padding: 10px 20px;
+        color: red;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 4px;
+}
+
+    .aCancelar:hover {
+    background: rgb(218, 75, 75);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(218, 75, 75),
+                0 0 25px rgb(218, 75, 75),
+                0 0 50px rgb(218, 75, 75),
+                0 0 100px rgb(218, 75, 75);
+}
+
+/*===== media queries ===== */
+
+@media (min-width: 768px){
+
+    #contenedor-grid{
+        height: 100vh; /*100% viewport heigh */
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        grid-template-rows: auto repeat(2, 1fr);
+        grid-template-areas: 
+        "titulo titulo"
+        "datos-personales formacion-academica"
+        "experiencia-laboral proyectos";
+    }
+
+    .imagen-foto img{
+        border-radius: 50%;
+        /*width: 20rem;*/
+    }
+
+    .section-container {
+        font-size: 1.0rem;
+    }
+
+    .titulo img {
+        width: 2rem;
+    }
+
+    .icono-editar img{
+        width: 2rem;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    #contenedor-grid{
+        /*height: 100vh; /*100% viewport heigh */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(4, 1fr);
+        grid-template-areas: 
+        "titulo"
+        "datos-personales" 
+        "formacion-academica"
+        "experiencia-laboral"
+        "proyectos";
+    }
+
+    .imagen-foto img{
+        border-radius: 50%;
+        /*width: 20rem;*/
+    }
+
+    .section-container {
+        font-size: 1.5rem;
+    }
+
+    .datos-personales label {
+        width: 15vw;
+    }
+
+    tbody td img {
+        width: 1.5rem;
+    }
+
+    .datos-personales-editar input {
+        width: 20rem;
+        margin-left: 1rem;
+    }
+    
+    .nueva-formacion input {
+        width: 15rem;
+    }
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nueva Formacion Academica</title>
+
+  <!--link para aplicar bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!--link para aplicar CSS-->
+  <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+    
+    <body class="bg-success">
+
+      <div class="card m-2 section-container">
+    
+        <div class="card-header text-center">
+          <h2>Nueva Formación Academica</h2>
+        </div>
+    
+        <div class="card-body nueva-formacion">
+    
+          <form action="portfolio.html" method="GET" autocomplete="off" class="d-flex flex-column justify-content-between">
+            <div class="user-box d-flex justify-content-center m-2">
+              <label>Institución</label>
+              <input type="text" name="formacionInstitucion" id="formacionInstitucion" placeholder="nombre Institución" required="">
+            </div>
+            <div class="user-box d-flex justify-content-center m-2">
+              <label>Titulo</label>
+              <input type="text" name="formacionTitulo" id="formacionTitulo" placeholder="nombre Titulo" required="">
+            </div>
+            <div class="user-box d-flex justify-content-center m-2">
+              <label>Fecha</label>
+              <input type="date" name="formacionFecha" id="formacionFecha" required="">
+            </div>
+    
+          </form>
+    
+        </div>
+    
+        <div class="d-flex flex-row justify-content-center mb-3">
+          <input type="submit" href="#" class="aAceptar m-2" value="Aceptar">
+          <a href="./portfolio.html" class="aCancelar m-2">Cancelar</a>
+        </div>
+    
+      </div>
+    
+    </body>
+
+</html>
