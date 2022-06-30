@@ -16,7 +16,86 @@
     
     <body>
 
-      <div class="card m-2 section-container">
+      <main class="container-fluid">
+
+        <form action="portfolio.html" method="GET" autocomplete="off" class="card section-container mt-2">
+    
+          <div class="row section-container mx-0 my-1">
+    
+            <div class="col-xs-12 col-md-12 col-lg-12 text-center card-header">
+    
+              <h2>Info Proyecto</h2>
+    
+            </div><!--end column -->
+          
+          </div> <!-- end row -->
+    
+    
+          <div class="container-fluid m-0 p-0 datos-personales-editar">
+            
+            <div class="row">
+            
+              <div class="col-xs-12 col-md-6 col-lg-12 px-1 mb-1">
+                <div class="user-box d-flex justify-content-center m-2">
+                  <label>Nombre:</label>
+                  <input type="text" name="infoProyectoNombre" id="infoProyectoNombre" placeholder="nombre Proyecto" required="">
+                </div>
+              </div><!--end column -->
+            
+              <div class="col-xs-12 col-md-6 col-lg-12 px-1 mb-1">
+                <div class="user-box d-flex justify-content-center m-2">
+                  <label>URL:</label>
+                  <input type="text" name="infoProyectoURL" id="infoProyectoURL" placeholder="URL" required="">
+                </div>
+              </div><!--end column -->
+            
+            </div> <!--end div row -->
+            
+          </div>
+            
+          <div class="container-fluid m-0 p-0 datos-personales-editar">
+            
+            <div class="row">
+            
+              <div class="col-xs-12 col-md-12 col-lg-12 px-1 mb-1">
+                <div class="user-box d-flex justify-content-center m-2">
+                  <label>Fecha:</label>
+                  <input type="date" name="infoProyectoFecha" id="infoProyectoFecha" required="">
+                </div>
+              </div><!--end column -->
+            
+            </div> <!--end div row -->
+            
+          </div><!--end div container -->
+    
+          <div class="container-fluid">
+    
+            <div class="row my-1">
+    
+              <div class="col-xs-12 col-md-12 col-lg-12 px-1 mb-1"></div>
+    
+                <div class="d-flex flex-row justify-content-center mb-3">
+                  <input type="submit" href="#" class="aAceptar m-2" value="Aceptar">
+                  <a href="./portfolio.html" class="aCancelar m-2">Cancelar</a>
+                </div>
+              
+              </div> <!--end column -->
+            
+            </div> <!-- end row -->
+    
+          </div><!--end div container -->
+    
+        </form>
+    
+      </main> <!--end container general -->
+
+    </body>
+
+</html>
+
+
+<!-- 
+  <div class="card m-2 section-container">
       
         <div class="card-header text-center">
           <h2>Info Proyecto</h2>
@@ -48,7 +127,4 @@
         </div>
     
       </div>
-
-    </body>
-
-</html>
+-->
