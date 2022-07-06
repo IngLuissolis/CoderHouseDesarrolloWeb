@@ -1,0 +1,100 @@
+/*===== Reset ===== */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*===== Maquetado Global ===== */
+
+@keyframes textAlpha{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+.animate{
+	animation-name: textAlpha;
+	animation-iteration-count: 1;
+}
+
+.duracion-3s {
+    animation-duration: 3s;
+}
+
+.duracion-5s {
+    animation-duration: 5s;
+}
+
+.duracion-7s {
+    animation-duration: 7s;
+}
+
+.duracion-8s {
+    animation-duration: 8s;
+}
+
+
+/*===== index.html ===== */
+
+.portada {
+    background-color: black;
+    color: white;
+}
+
+.portada img {
+    height: 35px;
+}
+
+/*===== portfolio.html ===== */
+
+.portfolio {
+    background-color: black;
+    color: white;
+}
+
+.portfolio-icono {
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.portfolio-foto-perfil {
+    height: 18vh;
+    border-radius: 50%;
+    margin-top: -10%;
+}
+
+.portfolio-contacto-img {
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+
+
+.portfolio-experiencia h1 {
+    font-size: 1.2rem;
+}
+
+.portfolio-experiencia .card {
+    color: white;
+    background-color: black;
+}
