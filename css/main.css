@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0; }
+
+h1, h2, h3 {
+  font-family: "Roboto"; }
+
+h1 {
+  font-size: 1.2rem; }
+
+ul {
+  list-style: none; }
+  ul li {
+    padding: 1rem;
+    display: inline-block; }
+    ul li:hover {
+      color: rgba(179, 21, 21, 0.767); }
+    ul li a {
+      text-decoration: none;
+      font-size: 3em;
+      color: #6D6A6A; }
+
+@keyframes textAlpha {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.animate {
+  animation-name: textAlpha;
+  animation-iteration-count: 1; }
+
+.duracion-3s {
+  animation-duration: 3s; }
+
+.duracion-5s {
+  animation-duration: 5s; }
+
+.duracion-7s {
+  animation-duration: 7s; }
+
+.duracion-8s {
+  animation-duration: 8s; }
+
+.portfolio {
+  background-color: #1A1A1A;
+  color: #F3F0F0; }
+
+.portfolio-icono {
+  height: 1.5rem;
+  border-radius: 50%; }
+
+.portfolio-foto-perfil {
+  height: 18vh;
+  border-radius: 50%;
+  margin-top: -10%; }
+
+.portfolio-contacto-img {
+  height: 1.5rem;
+  border-radius: 50%; }

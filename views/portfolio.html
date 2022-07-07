@@ -10,100 +10,248 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <!--link para aplicar CSS-->
-    <link rel="stylesheet" href="../css/style.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" 
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+
+    <!--link para aplicar CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!--link para aplicar CSS
+    <link rel="stylesheet" href="../css/style.css">
+    -->
 
 </head>
 
-<body class="portfolio">
+<body >
 
-    <div>
+    <section class="d-flex justify-content-end text-end portfolio">
+        <p class="w-25 mx-1">02</p>
+    </section>
 
-        <section class="d-flex justify-content-end text-end m-1">
-            <p class="w-25">02</p>
-        </section>
-
-
-        <section class="d-flex justify-content-between m-1" >
-
-            <div>
-                <a href="#" >
+    <div class="portfolio">
+    
+    
+        <section class="d-flex justify-content-between mx-1">
+    
+            <div class="">
+                <a href="#">
                     <img src="../img/github.svg" alt="github" class="portfolio-icono" style="background-color: white;">
                 </a>
-
+    
                 <a class="" href="#">
                     <img src="../img/linkedin.svg" alt="linkedin" class="portfolio-icono" style="background-color: white;">
                 </a>
             </div>
-
-            <div>
-
-                <a class="" href="../index.html">
-                    <img src="../img/person-circle.svg" alt="Volver Inicio" class="portfolio-icono" style="background-color: white;">
-                </a>
-
-            </div>
-
-        </section>
-
-        <hr class="m-2">
-
-        <section class="text-center m-1">
-
+    
             <div class="">
-                <img src="../img/fotoperfil.jpg" alt="imagen-foto" class="img-thumbnail animate duracion-3s portfolio-foto-perfil">
+    
+                <a class="" href="../index.html">
+                    <img src="../img/person-circle.svg" alt="Volver Inicio" class="portfolio-icono"
+                        style="background-color: white;">
+                </a>
+    
             </div>
-
+    
+        </section>
+    
+        <hr class="m-2">
+    
+        <section class="text-center m-1">
+    
+            <div class="">
+                <img src="../img/fotoperfil.jpg" alt="imagen-foto"
+                    class="img-thumbnail animate duracion-3s portfolio-foto-perfil">
+            </div>
+    
             <h1>Luis</h1>
             <h1>Solís</h1>
-        
+    
         </section>
-
+    
         <hr class="m-1">
-
-        <section class="d-flex flex-column ">
-
+    
+        <section class="d-flex flex-column">
+    
             <div class="d-flex justify-content-center my-1">
-                <img src="../img/envelope.svg" alt="mail" style="background-color: white" class="portfolio-contacto-img mx-1">
+                <img src="../img/envelope.svg" alt="mail" style="background-color: white"
+                    class="portfolio-contacto-img mx-1">
                 <p>edusolis@yahoo.com.ar</p>
             </div>
-
+    
             <div class="d-flex justify-content-center my-1">
-                <img src="../img/geo-alt.svg" alt="locacion" style="background-color: white;" class="portfolio-contacto-img mx-1">
+                <img src="../img/geo-alt.svg" alt="locacion" style="background-color: white;"
+                    class="portfolio-contacto-img mx-1">
                 <p>Bariloche - Argentina</p>
-                <img src="../img/Argentina_flag_icon.svg.png" alt="bandera Argentina" style="background-color: white;" class="portfolio-contacto-img mx-1">
+                <img src="../img/Argentina_flag_icon.svg.png" alt="bandera Argentina" style="background-color: white;"
+                    class="portfolio-contacto-img mx-1">
             </div>
-
+    
             <div class="d-flex justify-content-center my-1">
-                <img src="../img/phone.svg" alt="phone" style="background-color: white;" class="portfolio-contacto-img mx-1">
+                <img src="../img/phone.svg" alt="phone" style="background-color: white;"
+                    class="portfolio-contacto-img mx-1">
                 <p>+54 299 610 9623</p>
             </div>
-
+    
         </section>
-
-        <hr class="m-1">
-
-        <section class="portfolio-experiencia">
-
-            <div class="m-1">
-                <h1>Experiencia Laboral</h1>
-            </div>
-
-            <div class="card m-0 p-1">
-                <div class="card-header m-0 p-1 d-flex">
-                    <p>Freelance</p>
-                    <p class="mx-1">2020</p>
-                    <p class="mx-1">Actual</p>                   
-                </div>
-                <div class="card-body m-0 p-1">
-                    <p>Development Full Stack Jr</p>
-                </div>
-            </div>
-
-        </section>
-
+    
     </div>
+    
+    <hr class="m-1">
+    
+    <section class="portfolio-section">
+    
+        <div class="m-1">
+            <h1>Experiencia Laboral</h1>
+        </div>
+    
+        <div class="accordion accordion-flush m-1" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        <img class="portfolio-contacto-img mx-1" src="../img/diamond-hard.svg"
+                            alt="logo Freelance">
+                        Freelance (2020 - Actual)
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Development Full Stack Jr - Descripción
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        <img class="portfolio-contacto-img mx-1" src="../img/logo-ypf.png"
+                            alt="logo Freelance">
+                        YPF SA (2014 - 2020)
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lider Ingenieria Reservorios - Descripción
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <img class="portfolio-contacto-img mx-1" src="../img/logo-capsa.png"
+                            alt="logo Freelance">
+                        CAPSA (2008 - 2014)
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Ingeniero Reservorios Senior - Descripción
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr class="m-1">
+    
+    <section class="portfolio-section">
+        <div class="m-1">
+            <h1>Educación</h1>
+        </div>
+    
+        <div class="accordion accordion-flush m-1" id="accordionFlushExample1">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
+                        <img class="portfolio-contacto-img mx-1" src="../img/logo-coder.png"
+                            alt="logo Freelance">CoderHouse (2022)
+                    </button>
+                </h2>
+                <div id="flush-collapseOne1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne1"
+                    data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body">Development Full Stack Jr
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo1" aria-expanded="false" aria-controls="flush-collapseTwo1">
+                        <img class="portfolio-contacto-img mx-1" src=""
+                            alt="logo">
+                        #ArgentinaPrograma (2022)
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo1" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo1"
+                    data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body">Development Full Stack Jr
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree1" aria-expanded="false" aria-controls="flush-collapseThree1">
+                        <img class="portfolio-contacto-img mx-1" src="../img/escudo-UNC.jpg"
+                            alt="logo Freelance">
+                        UNC (2004)
+                    </button>
+                </h2>
+                <div id="flush-collapseThree1" class="accordion-collapse collapse" aria-labelledby="flush-headingThree1"
+                    data-bs-parent="#accordionFlushExample1">
+                    <div class="accordion-body">Ingeniero Electronico
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+    
+    <hr class="m-1">
+    
+    <section class="portfolio-section">
+        <div class="m-1">
+            <h1>Proyectos</h1>
+        </div>
+    
+        <div class="accordion accordion-flush m-1" id="accordionFlushExample2">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne2" aria-expanded="false" aria-controls="flush-collapseOne2">
+                        <img class="portfolio-contacto-img mx-1" src="../img/diamond-hard.svg"
+                            alt="logo Freelance">CV Online
+                    </button>
+                </h2>
+                <div id="flush-collapseOne2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne2"
+                    data-bs-parent="#accordionFlushExample2">
+                    <div class="accordion-body">URL: wwww.CVonline.com
+                    </div>
+                </div>
+            </div>
+    
+            
+    
+        </div>
+    
+    </section>
+    
+    <hr class="m-1 p-0">
+
+    <section>
+        <ul class="list-group">
+            <li class="list-group-item"><a>Item 1</a></li>
+            <li class="list-group-item"><a>Item 2</a></li>
+            <li class="list-group-item"><a>Item 3</a></li>
+        </ul>
+    </section>
 
     <!--
     <script type="text/javascript">
