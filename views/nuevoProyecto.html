@@ -11,84 +11,43 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
       <!--link para aplicar CSS-->
-      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/main.css">
 
     </head>
     
     <body>
 
-      <main class="container-fluid">
+      <section class="d-flex justify-content-end text-end m-1">
+        <p class="w-25">05</p>
+      </section>
 
-        <form action="portfolio.html" method="GET" autocomplete="off" class="card section-container mt-2">
+      <div class="card m-2 section-container portada">
+      
+        <div class="card-header text-center">
+          <h2>Nuevo Proyecto</h2>
+        </div>
     
-          <div class="row section-container mx-0 my-1">
+        <div class="m-2">
+          <label for="exampleFormControlInput1" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="ProyectoFormControlInput1" placeholder="Nombre Empresa">
+        </div>
+        <div class="m-2">
+          <label for="exampleFormControlInput2" class="form-label">URL:</label>
+          <input type="text" class="form-control" id="ProyectoFormControlInput2" placeholder="Nombre Cargo">
+        </div>
+        <div class="m-2">
+          <label for="exampleFormControlTextarea1" class="form-label">Fecha:</label>
+          <input type="Date" class="form-control" id="ProyectexampleFormControlTextarea1"></input>
+        </div>
     
-            <div class="col-xs-12 col-md-12 col-lg-12 text-center card-header">
+        <div class="d-flex flex-row justify-content-center  m-2">
+          <input type="submit" href="#" class="boton-aceptar m-2" value="Aceptar">
+          <button type="button" class="boton-cancelar m-2">
+            <a class="" href="./portfolio.html">Cancelar</a>
+          </button>
+        </div>
     
-              <h2>Nuevo Proyecto</h2>
-    
-            </div><!--end column -->
-          
-          </div> <!-- end row -->
-    
-    
-          <div class="container-fluid m-0 p-0 datos-personales-editar">
-            
-            <div class="row">
-            
-              <div class="col-xs-12 col-md-6 col-lg-12 px-1 mb-1">
-                <div class="user-box d-flex justify-content-center m-2">
-                  <label>Nombre:</label>
-                  <input type="text" name="proyectoNombre" id="proyectoNombre" placeholder="nombre Proyecto" required="">
-                </div>
-              </div><!--end column -->
-            
-              <div class="col-xs-12 col-md-6 col-lg-12 px-1 mb-1">
-                <div class="user-box d-flex justify-content-center m-2">
-                  <label>URL:</label>
-                  <input type="text" name="proyectoURL" id="proyectoURL" placeholder="URL" required="">
-                </div>
-              </div><!--end column -->
-            
-            </div> <!--end div row -->
-            
-          </div>
-            
-          <div class="container-fluid m-0 p-0 datos-personales-editar">
-            
-            <div class="row">
-            
-              <div class="col-xs-12 col-md-12 col-lg-12 px-1 mb-1">
-                <div class="user-box d-flex justify-content-center m-2">
-                  <label>Fecha:</label>
-                  <input type="date" name="proyectoFecha" id="proyectoFecha" required="">
-                </div>
-              </div><!--end column -->
-            
-            </div> <!--end div row -->
-            
-          </div><!--end div container -->
-    
-          <div class="container-fluid">
-    
-            <div class="row my-1">
-    
-              <div class="col-xs-12 col-md-12 col-lg-12 px-1 mb-1"></div>
-    
-                <div class="d-flex flex-row justify-content-center mb-3">
-                  <input type="submit" href="#" class="aAceptar m-2" value="Aceptar">
-                  <a href="./portfolio.html" class="aCancelar m-2">Cancelar</a>
-                </div>
-              
-              </div> <!--end column -->
-            
-            </div> <!-- end row -->
-    
-          </div><!--end div container -->
-    
-        </form>
-    
-      </main> <!--end container general -->      
+      </div>
 
     </body>
 

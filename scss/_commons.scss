@@ -24,58 +24,6 @@ ul {
 
 }
 
-/*===== Aplicando maps, map-get y mixin ===== */
-
-// Mapa con breakpoints
-$breakpoints: (
-    medium: 480px,
-    large: 768px
-);
-
-@media (min-width: map-get($breakpoints, medium)) {
-
-    #portfolio-contenedor-grid {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: auto repeat(4, auto);
-        grid-template-areas: 
-        "portfolio-indice portfolio-indice"
-        "portfolio-datos-personales portfolio-experiencia"
-        "portfolio-datos-personales portfolio-educacion"
-        "portfolio-datos-personales portfolio-proyecto";
-    }
-
-    .portfolio-datos-personales p {
-        font-size: 0.8rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-  };
-
-@media (min-width: map-get($breakpoints, large)) {
-
-    #portfolio-contenedor-grid {
-        display: grid;
-        grid-template-columns: 30% 70%;
-    }
-
-    .portfolio-datos-personales p {
-        font-size: 1rem;
-    }
-
-    .portfolio-icono {
-        height: 2.5rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-}
-
 
 @mixin animate($textAlpha) {
     @keyframes #{$textAlpha} {
@@ -91,25 +39,39 @@ $breakpoints: (
 /*extend*/
 
 .boton {
-	width:200px;
-	height:50px;
-	background-color:white;
-	text-align:center;
-	color:black;
-	border-radius:20px;
-	border:1px solid black;
+	width: 150px;
+	height:45px;
+	background-color: $black;
+	text-align: center;
+	color: $white;
+	border-radius: 8px;
+    text-decoration: none;
+	border:1px solid $black;
+    transition-duration: 0.4s;
 }
 
 .boton-aceptar{
 	@extend .boton;
-	background-color:green;
-	color:yellow;
+	background-color: $green;
+
+    &:hover {
+        color: $black;
+    }
 }
+
 
 .boton-cancelar{
 	@extend .boton;
-	background-color:red;
-	color:yellow;
+	background-color: $red;
+    
+    a {
+        text-decoration: none;
+        color: $white;
+
+        &:hover {
+            color: $black;
+        }
+    }
 }
 
 
@@ -139,8 +101,8 @@ $breakpoints: (
 /*===== index.html ===== */
 
 .portada {
-    background-color: black;
-    color: white;
+    background-color: $black;
+    color: $white;
 }
 
 .portada img {
@@ -215,6 +177,55 @@ $breakpoints: (
     font-size: 1.2rem;
 }
 
+/*===== Aplicando maps, map-get y mixin ===== */
 
+// Mapa con breakpoints
+$breakpoints: (
+    medium: 480px,
+    large: 768px
+);
 
+@media (min-width: map-get($breakpoints, medium)) {
+
+    #portfolio-contenedor-grid {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto repeat(4, auto);
+        grid-template-areas: 
+        "portfolio-indice portfolio-indice"
+        "portfolio-datos-personales portfolio-experiencia"
+        "portfolio-datos-personales portfolio-educacion"
+        "portfolio-datos-personales portfolio-proyecto";
+    }
+
+    .portfolio-datos-personales p {
+        font-size: 0.8rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+  };
+
+@media (min-width: map-get($breakpoints, large)) {
+
+    #portfolio-contenedor-grid {
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+    .portfolio-datos-personales p {
+        font-size: 1rem;
+    }
+
+    .portfolio-icono {
+        height: 2.3rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+}
 

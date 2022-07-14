@@ -10,45 +10,40 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
       <!--link para aplicar CSS-->
-      <link rel="stylesheet" href="../css/style.css">
+      <link rel="stylesheet" href="../css/main.css">
 
     </head>
     
-    <body>
+    <body class="">
 
-      <div class="card m-2 section-container">
+      <section class="d-flex justify-content-end text-end m-1">
+        <p class="w-25">03</p>
+      </section>
+
+      <div class="card m-2 section-container portada">
       
         <div class="card-header text-center">
           <h2>Nueva Experiencia Laboral</h2>
         </div>
     
-        <div class="card-body nueva-formacion">
-    
-          <form action="portfolio.html" method="GET" autocomplete="off" class="d-flex flex-column justify-content-between">
-            <div class="user-box d-flex justify-content-center m-2">
-              <label>Compañia:</label>
-              <input type="text" name="experienciaLaboralCompania" id="experienciaLaboralCompania" placeholder="nombre Compañia" required="">
-            </div>
-            <div class="user-box d-flex justify-content-center m-2">
-              <label>Cargo:</label>
-              <input type="text" name="experienciaLaboralCargo" id="experienciaLaboralCargo" placeholder="Cargo" required="">
-            </div>
-            <div class="user-box d-flex justify-content-center m-2">
-              <label>Desde:</label>
-              <input type="date" name="experienciaLaboralFechaDesde" id="experienciaLaboralFechaDesde" required="">
-            </div>
-            <div class="user-box d-flex justify-content-center m-2">
-              <label>Hasta:</label>
-              <input type="date" name="experienciaLaboralFechaHasta" id="experienciaLaboralFechaHasta" required="">
-            </div>
-    
-          </form>
-    
+        <div class="m-2">
+          <label for="exampleFormControlInput1" class="form-label">Empresa:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre Empresa">
+        </div>
+        <div class="m-2">
+          <label for="exampleFormControlInput2" class="form-label">Cargo:</label>
+          <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Nombre Cargo">
+        </div>
+        <div class="m-2">
+          <label for="exampleFormControlTextarea1" class="form-label">Descripción Cargo:</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
         </div>
     
-        <div class="d-flex flex-row justify-content-center mb-3">
-          <input type="submit" href="#" class="aAceptar m-2" value="Aceptar">
-          <a href="./portfolio.html" class="aCancelar m-2">Cancelar</a>
+        <div class="d-flex flex-row justify-content-center  m-2">
+          <input type="submit" href="#" class="boton-aceptar m-2" value="Aceptar">
+          <button type="button" class="boton-cancelar m-2">
+            <a class="" href="./portfolio.html">Cancelar</a>
+          </button>
         </div>
     
       </div>
