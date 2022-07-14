@@ -112,7 +112,7 @@ ul {
 /*===== portfolio.html ===== */
 
 .portfolio-body {
-    background-color: black;
+    background-color: $black;
 }
 
 .portfolio-icono {
@@ -132,14 +132,13 @@ ul {
 }
 
 .portfolio-indice {
-    background: black;
-    color: white;
+    background: $black;
+    color: $white;
     grid-area: portfolio-indice;
 }
 
 .portfolio-datos-personales {
-    background: black;
-    color: white;
+    @extend .portfolio-indice;
     grid-area: portfolio-datos-personales;
 }
 
