@@ -1,7 +1,6 @@
 {
   "name": "proyectofinal",
   "version": "1.0.0",
-  "description": "CV online",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,12 +11,13 @@
     "type": "git",
     "url": "git+https://github.com/IngLuissolis/CoderHouseDesarrolloWeb.git"
   },
-  "author": "Luis Solis",
+  "author": "Luis solis",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/IngLuissolis/CoderHouseDesarrolloWeb/issues"
   },
   "homepage": "https://github.com/IngLuissolis/CoderHouseDesarrolloWeb#readme",
+  "description": "",
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"

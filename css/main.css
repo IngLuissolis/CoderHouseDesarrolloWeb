@@ -3,12 +3,6 @@
   padding: 0;
   margin: 0; }
 
-h1, h2, h3 {
-  font-family: "Roboto"; }
-
-h1 {
-  font-size: 1.2rem; }
-
 ul {
   list-style: none; }
   ul li {
@@ -21,12 +15,54 @@ ul {
       font-size: 3em;
       color: #6D6A6A; }
 
+/*===== Aplicando maps, map-get y mixin ===== */
+@media (min-width: 480px) {
+  #portfolio-contenedor-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: auto repeat(4, auto);
+    grid-template-areas: "portfolio-indice portfolio-indice" "portfolio-datos-personales portfolio-experiencia" "portfolio-datos-personales portfolio-educacion" "portfolio-datos-personales portfolio-proyecto"; }
+  .portfolio-datos-personales p {
+    font-size: 0.8rem; }
+  h3 {
+    font-size: 1.2rem; } }
+
+@media (min-width: 768px) {
+  #portfolio-contenedor-grid {
+    display: grid;
+    grid-template-columns: 30% 70%; }
+  .portfolio-datos-personales p {
+    font-size: 1rem; }
+  .portfolio-icono {
+    height: 2.5rem; }
+  h3 {
+    font-size: 1.2rem; } }
+
 @keyframes textAlpha {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
 
+/*extend*/
+.boton, .boton-aceptar, .boton-cancelar {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black; }
+
+.boton-aceptar {
+  background-color: green;
+  color: yellow; }
+
+.boton-cancelar {
+  background-color: red;
+  color: yellow; }
+
+/* animaciones */
 .animate {
   animation-name: textAlpha;
   animation-iteration-count: 1; }
@@ -43,9 +79,17 @@ ul {
 .duracion-8s {
   animation-duration: 8s; }
 
-.portfolio {
-  background-color: #1A1A1A;
-  color: #F3F0F0; }
+/*===== index.html ===== */
+.portada {
+  background-color: black;
+  color: white; }
+
+.portada img {
+  height: 35px; }
+
+/*===== portfolio.html ===== */
+.portfolio-body {
+  background-color: black; }
 
 .portfolio-icono {
   height: 1.5rem;
@@ -59,3 +103,39 @@ ul {
 .portfolio-contacto-img {
   height: 1.5rem;
   border-radius: 50%; }
+
+.portfolio-indice {
+  background: black;
+  color: white;
+  grid-area: portfolio-indice; }
+
+.portfolio-datos-personales {
+  background: black;
+  color: white;
+  grid-area: portfolio-datos-personales; }
+
+.portfolio-experiencia {
+  grid-area: portfolio-experiencia; }
+
+.portfolio-educacion {
+  grid-area: portfolio-educacion; }
+
+.portfolio-proyecto {
+  grid-area: portfolio-proyecto; }
+
+.portfolio-icono {
+  height: 1.5rem;
+  border-radius: 50%; }
+
+.portfolio-foto-perfil {
+  height: 18vh;
+  border-radius: 50%;
+  margin-top: -10%;
+  z-index: 100; }
+
+.portfolio-contacto-img {
+  height: 1.5rem;
+  border-radius: 50%; }
+
+.portfolio-section h1 {
+  font-size: 1.2rem; }

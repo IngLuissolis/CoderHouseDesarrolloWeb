@@ -54,109 +54,19 @@ div {
 }
 
 
-/*===== index.html ===== */
 
-.portada {
-    background-color: black;
-    color: white;
-}
-
-.portada img {
-    height: 35px;
-}
 
 /*===== portfolio.html ===== */
 
-.portfolio-body {
-    background-color: black;
-}
-
-.portfolio-indice {
-    background: black;
-    color: white;
-    grid-area: portfolio-indice;
-}
-
-.portfolio-datos-personales {
-    background: black;
-    color: white;
-    grid-area: portfolio-datos-personales;
-}
-
-.portfolio-experiencia {
-    grid-area: portfolio-experiencia;
-}
-
-.portfolio-educacion {
-    grid-area: portfolio-educacion;
-}
-
-.portfolio-proyecto {
-    grid-area: portfolio-proyecto;
-}
-
-.portfolio-icono {
-    height: 1.5rem;
-    border-radius: 50%;
-}
-
-.portfolio-foto-perfil {
-    height: 18vh;
-    border-radius: 50%;
-    margin-top: -10%;
-    z-index: 100;
-}
-
-.portfolio-contacto-img {
-    height: 1.5rem;
-    border-radius: 50%;
-}
 
 
-.portfolio-section h1 {
-    font-size: 1.2rem;
-}
 
 @media (min-width: 480px){
 
-    #portfolio-contenedor-grid {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: auto repeat(3, auto);
-        grid-template-areas: 
-        "portfolio-indice portfolio-indice"
-        "portfolio-datos-personales portfolio-experiencia"
-        "portfolio-datos-personales portfolio-educacion"
-        "portfolio-datos-personales portfolio-proyecto";
-    }
-
-
-    .portfolio-datos-personales p {
-        font-size: 0.8rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
 
 }
 
 @media (min-width: 768px){
 
-    #portfolio-contenedor-grid {
-        display: grid;
-        grid-template-columns: 30% 70%;
-    }
 
-    .portfolio-datos-personales p {
-        font-size: 1rem;
-    }
-
-    .portfolio-icono {
-        height: 2.5rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
 }
