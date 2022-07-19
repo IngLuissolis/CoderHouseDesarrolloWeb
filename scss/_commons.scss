@@ -8,7 +8,7 @@ ul {
     list-style: none;
 
     li {
-        padding: 1rem;
+        padding: 0.5rem;
         display: inline-block;
 
         &:hover {
@@ -159,6 +159,10 @@ ul {
     border-radius: 50%;
 }
 
+.portfolio-icono-titulo {
+    height: 2rem;
+}
+
 .portfolio-foto-perfil {
     height: 18vh;
     border-radius: 50%;
@@ -174,6 +178,12 @@ ul {
 
 .portfolio-section h1 {
     font-size: 1.2rem;
+}
+
+.portfolio-a-disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.3;
 }
 
 /*===== Aplicando maps, map-get y mixin ===== */

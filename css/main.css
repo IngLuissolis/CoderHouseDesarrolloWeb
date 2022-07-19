@@ -6,14 +6,14 @@
 ul {
   list-style: none; }
   ul li {
-    padding: 1rem;
+    padding: 0.5rem;
     display: inline-block; }
     ul li:hover {
       color: rgba(185, 21, 21, 0.774); }
     ul li a {
       text-decoration: none;
       font-size: 3em;
-      color: #6D6A6A; }
+      color: grey; }
 
 @keyframes textAlpha {
   from {
@@ -25,26 +25,26 @@ ul {
 .boton, .boton-aceptar, .boton-cancelar {
   width: 150px;
   height: 45px;
-  background-color: #1A1A1A;
+  background-color: black;
   text-align: center;
-  color: #F3F0F0;
+  color: white;
   border-radius: 8px;
   text-decoration: none;
-  border: 1px solid #1A1A1A;
+  border: 1px solid black;
   transition-duration: 0.4s; }
 
 .boton-aceptar {
   background-color: green; }
   .boton-aceptar:hover {
-    color: #1A1A1A; }
+    color: black; }
 
 .boton-cancelar {
   background-color: rgba(185, 21, 21, 0.774); }
   .boton-cancelar a {
     text-decoration: none;
-    color: #F3F0F0; }
+    color: white; }
     .boton-cancelar a:hover {
-      color: #1A1A1A; }
+      color: black; }
 
 /* animaciones */
 .animate {
@@ -65,8 +65,8 @@ ul {
 
 /*===== index.html ===== */
 .portada {
-  background-color: #1A1A1A;
-  color: #F3F0F0; }
+  background-color: black;
+  color: white; }
 
 .portada img {
   height: 35px; }
@@ -88,14 +88,12 @@ ul {
   height: 1.5rem;
   border-radius: 50%; }
 
-.portfolio-indice {
+.portfolio-indice, .portfolio-datos-personales {
   background: black;
   color: white;
   grid-area: portfolio-indice; }
 
 .portfolio-datos-personales {
-  background: black;
-  color: white;
   grid-area: portfolio-datos-personales; }
 
 .portfolio-experiencia {
@@ -111,6 +109,9 @@ ul {
   height: 1.5rem;
   border-radius: 50%; }
 
+.portfolio-icono-titulo {
+  height: 2rem; }
+
 .portfolio-foto-perfil {
   height: 18vh;
   border-radius: 50%;
@@ -123,6 +124,11 @@ ul {
 
 .portfolio-section h1 {
   font-size: 1.2rem; }
+
+.portfolio-a-disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.3; }
 
 /*===== Aplicando maps, map-get y mixin ===== */
 @media (min-width: 480px) {
