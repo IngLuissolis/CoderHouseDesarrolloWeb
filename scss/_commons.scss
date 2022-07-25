@@ -3,22 +3,34 @@
     margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
 
 ul {
     list-style: none;
 
     li {
-        padding: 0.5rem;
+        padding: 0.1rem;
         display: inline-block;
-
-        &:hover {
-            color: $red;
-        }
 
         a {
             text-decoration: none;
             font-size: $textXl;
             color: $grey;
+        }
+
+        &:hover {
+            background-color: $black;
+            color: $white;
+            border-radius: 0.5rem;
         }
 
         p {
@@ -29,6 +41,21 @@ ul {
 
 }
 
+.card {
+
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.accordion-item{
+    @extend .card;
+
+    &:hover {
+        border-radius: 0.5rem;
+    }
+}
 
 @mixin animate($textAlpha) {
     @keyframes #{$textAlpha} {
@@ -64,7 +91,6 @@ ul {
     }
 }
 
-
 .boton-cancelar{
 	@extend .boton;
 	background-color: $red;
@@ -78,7 +104,6 @@ ul {
         }
     }
 }
-
 
 /* animaciones */
 
@@ -123,12 +148,7 @@ ul {
 .portfolio-icono {
     height: $icono-alto;
     border-radius: 50%;
-}
-
-.portfolio-foto-perfil {
-    height: 18vh;
-    border-radius: 50%;
-    margin-top: -10%;
+    background-color: $white;
 }
 
 .portfolio-contacto-img {
@@ -137,14 +157,37 @@ ul {
 }
 
 .portfolio-indice {
-    background: $black;
+    background-color: $black;
     color: $white;
+    border-radius: 0.5rem;
+    text-align: center;
     grid-area: portfolio-indice;
+
+    .nav-item {
+        width: 10rem;
+    }
+
+    .nav-link {
+
+        border-radius: 0.5rem;
+        color: $white;
+        width: 10rem;
+        height: 2.4rem;
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+    }
 }
 
+
 .portfolio-datos-personales {
-    @extend .portfolio-indice;
+    background-color: $black;
+    color: $white;
+//    @extend .portfolio-indice;
     grid-area: portfolio-datos-personales;
+    border-radius: 0.5rem;
 }
 
 .portfolio-experiencia {
@@ -159,9 +202,9 @@ ul {
     grid-area: portfolio-proyecto;
 }
 
-.portfolio-icono {
+.portfolio-icono-plus {
     height: 1.5rem;
-    border-radius: 50%;
+    opacity: 0.5;
 }
 
 .portfolio-icono-titulo {
@@ -169,9 +212,9 @@ ul {
 }
 
 .portfolio-foto-perfil {
-    height: 18vh;
+    height: 20vh;
     border-radius: 50%;
-    margin-top: -10%;
+    margin-top: -4%;
     z-index: 100;
 }
 
@@ -185,10 +228,8 @@ ul {
     font-size: 1.2rem;
 }
 
-.portfolio-a-disabled {
-    pointer-events: none;
-    cursor: default;
-    opacity: 0.3;
+.portfolio-descripcion-cargo {
+    color: $grey;
 }
 
 /*===== Aplicando maps, map-get y mixin ===== */
@@ -199,21 +240,35 @@ $breakpoints: (
     large: 768px
 );
 
-@media (min-width: map-get($breakpoints, medium)) {
+@media (min-width: map-get($breakpoints, large)) {
 
     #portfolio-contenedor-grid {
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 30% 70%;
         grid-template-rows: auto repeat(4, auto);
         grid-template-areas: 
-        "portfolio-indice portfolio-indice"
+        "portfolio-datos-personales portfolio-indice"
         "portfolio-datos-personales portfolio-experiencia"
         "portfolio-datos-personales portfolio-educacion"
         "portfolio-datos-personales portfolio-proyecto";
     }
 
+    .portfolio-datos-personales {
+        margin: 0.2rem;
+        padding: 0.2rem;
+        height: 99vh;
+        width: 29.5vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
     .portfolio-datos-personales p {
-        font-size: 0.8rem;
+        font-size: 1rem;
+    }
+
+    .portfolio-icono {
+        height: 2rem;
     }
 
     h3 {
@@ -222,24 +277,4 @@ $breakpoints: (
 
   };
 
-@media (min-width: map-get($breakpoints, large)) {
-
-    #portfolio-contenedor-grid {
-        display: grid;
-        grid-template-columns: 30% 70%;
-    }
-
-    .portfolio-datos-personales p {
-        font-size: 1rem;
-    }
-
-    .portfolio-icono {
-        height: 2.3rem;
-    }
-
-    h3 {
-        font-size: 1.2rem;
-    }
-
-}
 

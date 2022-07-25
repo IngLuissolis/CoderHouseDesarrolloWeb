@@ -23,38 +23,28 @@
 <body class="m-1">
 
     <div id="portfolio-contenedor-grid">
-    
-        <section class="portfolio-indice d-flex justify-content-end text-end m-0 p-0">
-            <p class="w-25 mx-1">02</p>
-        </section>
-    
-        <div class="portfolio-datos-personales">
+
+        <div class="portfolio-datos-personales pt-1">
   
             <section class="d-flex justify-content-between mx-1">
     
                 <div class="">
+                    <a class="" href="../index.html">
+                        <img src="../img/person-circle.svg" alt="Volver Inicio" class="portfolio-icono">
+                    </a>
+                </div>
+
+                <div class="">
                     <a href="#">
-                        <img src="../img/github.svg" alt="github" class="portfolio-icono" style="background-color: white;">
+                        <img src="../img/github.svg" alt="github" class="portfolio-icono">
                     </a>
     
                     <a class="" href="#">
-                        <img src="../img/linkedin.svg" alt="linkedin" class="portfolio-icono"
-                            style="background-color: white;">
+                        <img src="../img/linkedin.svg" alt="linkedin" class="portfolio-icono">
                     </a>
-                </div>
-    
-                <div class="">
-    
-                    <a class="" href="../index.html">
-                        <img src="../img/person-circle.svg" alt="Volver Inicio" class="portfolio-icono"
-                            style="background-color: white;">
-                    </a>
-    
                 </div>
     
             </section>
-    
-            <hr class="m-2">
     
             <section class="text-center m-1">
     
@@ -70,15 +60,15 @@
     
             <hr class="m-1">
     
-            <section class="d-flex flex-column">
+            <section class="d-flex flex-column my-1">
     
-                <div class="d-flex justify-content-center my-1">
+                <div class="d-flex justify-content-center my-2">
                     <img src="../img/mail.png" alt="mail" style="background-color: white"
                         class="portfolio-contacto-img mx-1">
                     <p>edusolis@yahoo.com.ar</p>
                 </div>
     
-                <div class="d-flex justify-content-center my-1">
+                <div class="d-flex justify-content-center my-2">
                     <img src="../img/location.png" alt="locacion" style="background-color: white"
                         class="portfolio-contacto-img mx-1">
                     <p>Bariloche - Argentina</p>
@@ -86,7 +76,7 @@
                         class="portfolio-contacto-img mx-1">
                 </div>
     
-                <div class="d-flex justify-content-center my-1">
+                <div class="d-flex justify-content-center my-2">
                     <img src="../img/cel-phone.png" alt="phone" style="background-color: white;"
                         class="portfolio-contacto-img mx-1">
                     <p>+54 299 610 9623</p>
@@ -96,17 +86,17 @@
 
             <hr class="m-1">
 
-            <section class="text-center my-2">
+            <section class="text-center my-1">
                 <div class="d-flex justify-content-center my-1">
                     <img src="../img/translate.svg" alt="language" style="background-color: white;" class="portfolio-contacto-img mx-1">
                     <h3>Idiomas</h3>
                 </div>
                 
-                <div class="d-flex justify-content-center my-2">
+                <div class="d-flex justify-content-center my-3">
                     <img src="../img/Bandera_de_España.png" alt="bandera españa" class="portfolio-contacto-img mx-1">
                     <p>Nativo</p>
                 </div>
-                <div class="d-flex justify-content-center my-2">
+                <div class="d-flex justify-content-center my-3">
                     <img src="../img/Flag_of_the_United_Kingdom.png" alt="bandera españa" class="portfolio-contacto-img mx-1">
                     <p>Tarzan</p>
                 </div>
@@ -114,28 +104,41 @@
                     <img src="../img/vulcano.png" alt="star" class="portfolio-contacto-img mx-1">
                     <p>Vulcano</p>
                 </div>
-
             </section>
 
             <hr class="m-1">
 
-            <section>
-            
-
+            <section class="portfolio-indice d-flex justify-content-center align-items-center">
+                <nav class="navbar p-0">
+                        <ul class="navbar-nav p-0">
+                            <li class="nav-item p-0 m-1">
+                                <a class="nav-link" href="#Experiencia">EXPERIENCIA</a>
+                            </li>
+                            <li class="nav-item p-0 m-1">
+                                <a class="nav-link" href="#Educacion">EDUCACION</a>
+                            </li>
+                            <li class="nav-item p-0 m-1">
+                                <a class="nav-link" href="#Proyectos">PROYECTOS</a>
+                            </li>
+                        </ul>
+                </nav>
             </section>
-    
+
+
         </div>
+
+        
     
-        <section class="portfolio-section portfolio-experiencia">
+        <section class="portfolio-section portfolio-experiencia ms-1" id="Experiencia">
     
-            <div class="d-flex justify-content-between m-1 animate duracion-3s">
+            <div class="d-flex justify-content-between m-2 p-1 animate duracion-3s">
                 <div class="d-flex align-items-center">
                     <img class="portfolio-icono-titulo mx-1" src="../img/briefcase-fill.svg" alt="Maletin">
-                    <h2>Experiencia Laboral</h2>
+                    <h2>EXPERIENCIA LABORAL</h2>
                 </div>
                 
-                <a href="./nuevaExperienciaLaboral.html" class="portfolio-a-disabled">
-                    <img src="../img/plus-circle.svg" alt="icono sumar">
+                <a href="./nuevaExperienciaLaboral.html" class="">
+                    <img src="../img/plus-square.svg" alt="icono sumar" class="portfolio-icono-plus">
                 </a>
             </div>
     
@@ -145,12 +148,17 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                             <img class="portfolio-contacto-img mx-1" src="../img/diamond-hard.svg" alt="logo Freelance">
-                            Freelance (2020 - Actual)
+                            Freelance [ 2020 - Actual ]
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Desarrollador Full Stack - Descripción cargo
+                        <div class="accordion-body p-2">
+                            <h5 class="p-1">Ingeniero Desarrollador Full Stack</h5>
+                  <li class="ms-3">Desarrollo de interfaz y arquitectura de sitios web.</li>
+                  <li class="ms-3">Diseño interfaces de usuario y otras funcionalidades front-end.</li>
+                  <li class="ms-3">Desarrollo aplicaciones back-end.</li>
+                  <li class="ms-3">Mejora de funcionalidad de aplicaciones y páginas en dispositivos móviles.</li>
                         </div>
                     </div>
                 </div>
@@ -160,77 +168,107 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                             <img class="portfolio-contacto-img mx-1" src="../img/logo-ypf.png" alt="logo YPF">
-                            YPF SA (2014 - 2020)
+                            YPF SA [ 2014 - 2020 ]
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Lider Ingenieria Reservorios - Descripción cargo
+                        <div class="accordion-body p-2">
+                            <h5 class="p-1">Lider Ingenieria Reservorios</h5>
+                            <li class="ms-3">Liderar sector de Reservorios, integrado por cuatro colaboradores, dos
+                                Ingenieros y dos Geólogos.</li>
+                            <li class="ms-3">Monitorear el comportamiento de la producción de Petróleo y Gas del
+                                Yacimiento actuando sobre los desvíos y optimizando recursos.</li>
+                            <li class="ms-3">Elaborar análisis técnico-económico de propuestas para incremento de
+                                reservas y optimización de la producción de gas y petróleo.</li>
                         </div>
                     </div>
                 </div>
-    
+                
                 <div class="accordion-item d-block d-sm-none">
                     <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                             <img class="portfolio-contacto-img mx-1" src="../img/logo-capsa.png" alt="logo CAPSA">
-                            CAPSA (2008 - 2014)
+                            CAPSA [ 2008 - 2014 ]
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                         data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Ingeniero Reservorios Senior - Descripción cargo
+                        <div class="accordion-body p-2">
+                            <h5 class="p-1">Ingeniero Reservorios Senior</h5>
+                            <li class="ms-3">Monitorear el comportamiento de los proyectos asignados (Recuperación
+                                Primaria, Secundaria y Polímeros) a partir de la evaluación de los distintos
+                                parámetros operativos (Producción e Inyección).</li>
+                            <li class="ms-3">Realizar el cálculo de reservas a partir del volumen de rocas, mapas
+                                estratigráficos, mapas estructurales, antecedentes de producción de pozos
+                                vecinos, etc.</li>
                         </div>
                     </div>
                 </div>
+                </div>
+
+            <div class="card d-none d-sm-block m-1 p-0">
+                <div class="card-header d-flex">
+                    <img class="portfolio-contacto-img mx-1" src="../img/diamond-hard.svg" alt="logo Freelance">
+                    <h3>Freelance [ 2020 - Actual ]</h3>
+                </div>
+                <div class="card-body p-2">
+                  <h5 class="card-title">Ingeniero Desarrollador Full Stack</h5>
+                  <li class="ms-3">Desarrollo de interfaz y arquitectura de sitios web.</li>
+                  <li class="ms-3">Diseño interfaces de usuario y otras funcionalidades front-end.</li>
+                  <li class="ms-3">Desarrollo aplicaciones back-end.</li>
+                  <li class="ms-3">Mejora de funcionalidad de aplicaciones y páginas en dispositivos móviles.</li>
+                  <p class="card-text portfolio-descripcion-cargo">Saliendo de la zona de confort</p>
+                </div>
             </div>
 
-            
-            <div class="list-group d-none d-sm-block mx-1">
-
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <div class="d-flex">
-                            <img class="portfolio-contacto-img mx-1" src="../img/diamond-hard.svg" alt="logo Freelance">
-                            <h3>Freelance (2020 - Actual)</h3>
-                        </div>
-                        <p>Desarrollador Full Stack</p>
-                        <p>Descripción cargo - Saliendo de la zona de confort</p>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="d-flex">
-                            <img class="portfolio-contacto-img mx-1" src="../img/logo-ypf.png" alt="logo YPF">
-                            <h3>YPF SA (2014 - 2020)</h3>     
-                        </div>
-                        <p>Lider Ingenieria Reservorios</p>
-                        <p>Descripción cargo - Ingeniero en casi todo natalia natalia</p>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="d-flex">
-                            <img class="portfolio-contacto-img mx-1" src="../img/logo-capsa.png" alt="logo CAPSA">
-                            <h3>CAPSA (2008 - 2014)</h3> 
-                        </div>
-                        <p>Ingeniero Reservorios Senior</p>
-                        <p>La mejor epoca laboral - que vuelvan los 80</p>
-                    </li>
-                  </ul>
-
+            <div class="card d-none d-sm-block m-1 p-0">
+                <div class="card-header d-flex">
+                    <img class="portfolio-contacto-img mx-1" src="../img/logo-ypf.png" alt="logo YPF">
+                    <h3>YPF SA [ 2014 - 2020 ]</h3>
+                </div>
+                <div class="card-body p-2">
+                  <h5 class="card-title">Lider Ingenieria Reservorios</h5>
+                  <li class="ms-3">Liderar sector de Reservorios, integrado por cuatro colaboradores, dos
+                    Ingenieros y dos Geólogos.</li>
+                  <li class="ms-3">Monitorear el comportamiento de la producción de Petróleo y Gas del
+                    Yacimiento actuando sobre los desvíos y optimizando recursos.</li>
+                  <li class="ms-3">Elaborar análisis técnico-económico de propuestas para incremento de
+                    reservas y optimización de la producción de gas y petróleo.</li>
+                  <p class="card-text portfolio-descripcion-cargo">Ingeniero en casi todo</p>
+                </div>
             </div>
-            
+
+            <div class="card d-none d-sm-block m-1 p-0">
+                <div class="card-header d-flex">
+                    <img class="portfolio-contacto-img mx-1" src="../img/logo-capsa.png" alt="logo CAPSA">
+                    <h3>CAPSA [ 2008 - 2014 ]</h3>
+                </div>
+                <div class="card-body p-2">
+                  <h5 class="card-title">Ingeniero Reservorios Senior</h5>
+                  <li class="ms-3">Monitorear el comportamiento de los proyectos asignados (Recuperación
+                    Primaria, Secundaria y Polímeros) a partir de la evaluación de los distintos
+                    parámetros operativos (Producción e Inyección).</li>
+                  <li class="ms-3">Realizar el cálculo de reservas a partir del volumen de rocas, mapas
+                    estratigráficos, mapas estructurales, antecedentes de producción de pozos
+                    vecinos, etc.</li>
+                  <p class="card-text portfolio-descripcion-cargo">La mejor epoca laboral - que vuelvan los 80</p>
+                </div>
+            </div>
 
         </section>
     
-        <section class="portfolio-section portfolio-educacion">
+        <section class="portfolio-section portfolio-educacion ms-1" id="Educacion">
 
-            <div class="d-flex justify-content-between m-1 animate duracion-3s">
+            <div class="d-flex justify-content-between m-2 p-1 animate duracion-3s">
                 <div class="d-flex align-items-center">
                     <img class="portfolio-icono-titulo mx-1" src="../img/mortarboard-fill.svg" alt="Educacion">
-                    <h2>Educación</h2>
+                    <h2>EDUCACION</h2>
                 </div>
                 
-                <a href="./nuevaFormacion.html" class="portfolio-a-disabled">
-                    <img src="../img/plus-circle.svg" alt="icono sumar">
+                <a href="./nuevaFormacion.html" class="">
+                    <img src="../img/plus-square.svg" alt="icono sumar" class="portfolio-icono-plus">
                 </a>
             </div>
     
@@ -240,12 +278,17 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseOne1" aria-expanded="false" aria-controls="flush-collapseOne1">
                             <img class="portfolio-contacto-img mx-1" src="../img/logo-coder.png"
-                                alt="logo CoderHouse">CoderHouse (2022)
+                                alt="logo CoderHouse">CoderHouse [ 2022 ]
                         </button>
                     </h2>
                     <div id="flush-collapseOne1" class="accordion-collapse collapse d-sm-block" aria-labelledby="flush-headingOne1"
                         data-bs-parent="#accordionFlushExample1">
-                        <div class="accordion-body">Desarrollador Full Stack Junior
+                        <div class="accordion-body p-2">
+                            <h5 class="p-1">Desarrollador Full Stack Junior</h5>
+                            <li class="ms-3">Programación Backend</li>
+                            <li class="ms-3">React Js</li>
+                            <li class="ms-3">Javascript</li>
+                            <li class="ms-3">Desarrollo Web</li>
                         </div>
                     </div>
                 </div>
@@ -255,12 +298,17 @@
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#flush-collapseTwo1" aria-expanded="false" aria-controls="flush-collapseTwo1">
                             <img class="portfolio-contacto-img mx-1" src="" alt="logo">
-                            #ArgentinaPrograma (2022)
+                            #ArgentinaPrograma [ 2022 ]
                         </button>
                     </h2>
                     <div id="flush-collapseTwo1" class="accordion-collapse collapse d-sm-block" aria-labelledby="flush-headingTwo1"
                         data-bs-parent="#accordionFlushExample1">
-                        <div class="accordion-body">Desarrollador Full Stack Junior
+                        <div class="accordion-body p-2">
+                            <h5 class="p-1">Desarrollador Full Stack Junior</h5>
+                            <li class="ms-3">Programación Backend</li>
+                            <li class="ms-3">Angular</li>
+                            <li class="ms-3">Javascript</li>
+                            <li class="ms-3">Desarrollo Web</li>
                         </div>
                     </div>
                 </div>
@@ -271,59 +319,75 @@
                             data-bs-target="#flush-collapseThree1" aria-expanded="false"
                             aria-controls="flush-collapseThree1">
                             <img class="portfolio-contacto-img mx-1" src="../img/escudo-UNC.jpg" alt="logo UNC">
-                            UNC (2004)
+                            UNC [ 1998 - 2004 ]
                         </button>
                     </h2>
                     <div id="flush-collapseThree1" class="accordion-collapse collapse d-sm-block" aria-labelledby="flush-headingThree1"
                         data-bs-parent="#accordionFlushExample1">
-                        <div class="accordion-body">Ingeniero Electronico
+                        <div class="accordion-body p-2">
+                            <h5 class="p-1">Ingeniero Electronico</h5>
+                            <li class="ms-3">Diseñar, analizar y construir equipos y/o sistemas electrónicos</li>
+                            <li class="ms-3">Crear, innovar y transferir tecnología aplicando métodos y procedimientos en proyectos de
+                                ingeniería electrónica</li>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="list-group d-none d-sm-block mx-1">
+            <div class="card d-none d-sm-block m-1 p-0">
+                <div class="card-header d-flex">
+                    <img class="portfolio-contacto-img mx-1" src="../img/logo-coder.png" alt="logo CoderHouse">
+                    <h3>CoderHouse [ 2022 ]</h3>
+                </div>
+                <div class="card-body p-2">
+                  <h5 class="card-title">Desarrollador Full Stack Junior</h5>
+                  <li class="ms-3">Programación Backend</li>
+                  <li class="ms-3">React Js</li>
+                  <li class="ms-3">Javascript</li>
+                  <li class="ms-3">Desarrollo Web</li>
+                  <p class="card-text portfolio-descripcion-cargo">Saliendo de la zona de confort</p>
+                </div>
+            </div>
 
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <div class="d-flex">
-                            <img class="portfolio-contacto-img mx-1" src="../img/logo-coder.png" alt="logo CoderHouse">
-                            <h3>CoderHouse (2022)</h3>
-                        </div>
-                        <p>Desarrollador Full Stack Junior</p>
-                        <p>Descripción aprendizaje</p>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="d-flex">
-                            <img class="portfolio-contacto-img mx-1" src="" alt="logo">
-                            <h3>#ArgentinaPrograma (2022)</h3>
-                        </div>
-                        <p>Desarrollador Full Stack Junior</p>
-                        <p>Descripción aprendizaje</p>
-                    </li>
-                    <li class="list-group-item">
-                        <div class="d-flex">
-                            <img class="portfolio-contacto-img mx-1" src="../img/escudo-UNC.jpg" alt="logo UNC">
-                            <h3>Universidad Nacional de Cordoba - Argentina</h3>
-                        </div>
-                        <p>Ingeniero Electronico</p>
-                        <p>Descripción aprendizaje</p>
-                    </li>
-                  </ul>
+            <div class="card d-none d-sm-block m-1 p-0">
+                <div class="card-header d-flex">
+                    <img class="portfolio-contacto-img mx-1" src="" alt="logo">
+                    <h3>#ArgentinaPrograma [ 2022 ]</h3>
+                </div>
+                <div class="card-body p-2">
+                  <h5 class="card-title">Desarrollador Full Stack Junior</h5>
+                  <li class="ms-3">Programación Backend</li>
+                  <li class="ms-3">Angular</li>
+                  <li class="ms-3">Javascript</li>
+                  <li class="ms-3">Desarrollo Web</li>
+                  <p class="card-text portfolio-descripcion-cargo">Saliendo de la zona de confort</p>
+                </div>
+            </div>
 
+            <div class="card d-none d-sm-block m-1 p-0">
+                <div class="card-header d-flex">
+                    <img class="portfolio-contacto-img mx-1" src="../img/escudo-UNC.jpg" alt="logo UNC">
+                    <h3>Universidad Nacional de Cordoba - Argentina [ 1998 - 2004 ] </h3>
+                </div>
+                <div class="card-body p-2">
+                  <h5 class="card-title">Ingeniero Electronico</h5>
+                  <li class="ms-3">Diseñar, analizar y construir equipos y/o sistemas electrónicos</li>
+                  <li class="ms-3">Crear, innovar y transferir tecnología aplicando métodos y procedimientos en proyectos de ingeniería electrónica</li>
+                  <p class="card-text portfolio-descripcion-cargo">Aguante el alfajor cordobes</p>
+                </div>
             </div>
     
         </section>       
     
-        <section class="portfolio-section portfolio-proyecto">
-            <div class="d-flex justify-content-between m-1 animate duracion-3s">
+        <section class="portfolio-section portfolio-proyecto ms-1" id="Proyectos">
+            <div class="d-flex justify-content-between m-2 p-1 animate duracion-3s">
                 <div class="d-flex align-items-center">
                     <img class="portfolio-icono-titulo mx-1" src="../img/file-code-fill.svg" alt="proyecto">
-                    <h2>Proyectos</h2>
+                    <h2>PROYECTOS</h2>
                 </div>
                 
-                <a href="./nuevoProyecto.html" class="portfolio-a-disabled">
-                    <img src="../img/plus-circle.svg" alt="icono sumar">
+                <a href="./nuevoProyecto.html" class="">
+                    <img src="../img/plus-square.svg" alt="icono sumar" class="portfolio-icono-plus">
                 </a>
             </div>
     
@@ -338,7 +402,9 @@
                     </h2>
                     <div id="flush-collapseOne2" class="accordion-collapse collapse d-sm-block" aria-labelledby="flush-headingOne2"
                         data-bs-parent="#accordionFlushExample2">
-                        <div class="accordion-body">URL: wwww.CVonline.com
+                        <div class="accordion-body p-2">
+                            <h5 class="p-1">URL: wwww.CVonline.com</h5>
+                            <li class="ms-3">Descripción Proyecto</li>
                         </div>
                     </div>
                 </div>
@@ -347,61 +413,25 @@
 
             <div class="list-group d-none d-sm-block mx-1">
 
-                <ul class="list-group">
-                    <li class="list-group-item">
+                <div class="card d-none d-sm-block m-1 p-0">
+                    <div class="card-header d-flex">
                         <div class="d-flex">
                             <img class="portfolio-contacto-img mx-1" src="../img/diamond-hard.svg" alt="logo Freelance">
                             <h3>CV Online</h3>
                         </div>
-                        <p>URL: wwww.CVonline.com</p>
-                        <p>Descripción Proyecto</p>
-                    </li>
-                  </ul>
+                    </div>
+                    <div class="card-body p-2">
+                      <h5 class="card-title">URL: wwww.CVonline.com</h5>
+                      <li class="ms-3">Descripción Proyecto</li>
+                    </div>
+                </div>
 
             </div>
     
         </section>
-
-        <section>
-
-        </section>
-    
-        
-    
+  
     </div>
-   
-    <!--
-    <script type="text/javascript">
-        window.addEventListener("load", () => {
-
-            const params = (new URL(document.location)).searchParams;
-            var name = params.get("name");
-            var surname = params.get("surname");
-            var email = params.get("email");
-            var adress = params.get("adress");
-            var details = params.get("details");
-
-            //inicializacion de variables
-            if (name == null) {
-                name = "Luis";
-                surname = "Solís";
-                email = "edusolis@yahoo.com.ar";
-                adress = "San Carlos de Bariloche - Argentina";
-            }
-
-            document.getElementById("dpNombre").innerHTML = name;
-            document.getElementById("dpApellido").innerHTML = surname;
-            document.getElementById("dpEmail").innerHTML = email;
-            document.getElementById("dpDireccion").innerHTML = adress;
-
-        })
-    </script>
-    -->
-
+ 
 </body>
-
-<!--
-    <footer></footer>
-    -->
 
 </html>
