@@ -61,8 +61,8 @@ ul {
 .boton-cancelar {
   background-color: rgba(185, 21, 21, 0.774); }
   .boton-cancelar a {
-    text-decoration: none;
-    color: white; }
+    color: white;
+    text-decoration: none; }
     .boton-cancelar a:hover {
       color: black; }
 
@@ -135,6 +135,8 @@ ul {
 
 .portfolio-proyecto {
   grid-area: portfolio-proyecto; }
+  .portfolio-proyecto a {
+    text-decoration: none; }
 
 .portfolio-icono-plus {
   height: 1.5rem;

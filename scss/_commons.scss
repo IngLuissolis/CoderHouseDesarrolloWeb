@@ -91,13 +91,13 @@ ul {
     }
 }
 
-.boton-cancelar{
-	@extend .boton;
-	background-color: $red;
-    
+.boton-cancelar {
+    @extend .boton;
+    background-color: $red;
+
     a {
-        text-decoration: none;
         color: $white;
+        text-decoration: none;
 
         &:hover {
             color: $black;
@@ -200,6 +200,10 @@ ul {
 
 .portfolio-proyecto {
     grid-area: portfolio-proyecto;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .portfolio-icono-plus {
