@@ -59,7 +59,7 @@ ul {
     h6 {
         font-size: 0.8rem;
     }
-    
+
 }
 
 @mixin animate($textAlpha) {
@@ -242,6 +242,14 @@ ul {
 
 .portfolio-descripcion-cargo {
     color: $grey;
+}
+
+/* pagina 404 */
+
+.imagen-404 {
+    border: 0.2rem solid $black;
+    width: 100%;
+    height: 100%;
 }
 
 /*===== Aplicando maps, map-get y mixin ===== */
